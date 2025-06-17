@@ -1,5 +1,7 @@
 Bu projede, bir görüntüde yer alan kiviler filtrelenerek yalnızca kivilerin beyaz, arka planın ise tamamen siyah olduğu bir çıktı elde edilmiştir. İşlem sonucunda yapraklar görüntüden ayıklanarak sadece kiviler görselde bırakılmıştır.
 Proje kapsamında şu adımlar uygulanmıştır:
+
+
 İlk olarak, giriş görüntüsü gri tonlamaya dönüştürülmüş ve ardından kenarların daha belirgin hale gelmesi için Canny kenar algılama algoritması kullanılmıştır. Bu adım, görüntüdeki nesnelerin dış hatlarını belirlemek açısından kritik bir rol oynamıştır.
 Alternatif olarak adaptif thresholding yöntemi de denenmiştir; ancak bu yöntemin kenarları yeterince net ayırt edemediği görülmüş ve bu nedenle Canny yöntemi tercih edilmiştir.
 Kenar tespitinden sonra, konturlar arasında oluşabilecek boşlukları gidermek amacıyla morfolojik kapatma (closing) işlemi uygulanmıştır. Bu adım sayesinde yakındaki kenarlar birleştirilerek daha sağlam ve bütünsel konturlar elde edilmiştir.
