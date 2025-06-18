@@ -11,7 +11,7 @@ class BackgroundSubtraction:
     def convert_to_gray_and_hsv(self):
         self.gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
         self.hsv = cv2.cvtColor(self.img, cv2.COLOR_BGR2HSV)
-        return self.gray, self.hsv
+
     
     def edge_detection(self):
         self.edges = cv2.Canny(self.gray, threshold1=100, threshold2=200)
